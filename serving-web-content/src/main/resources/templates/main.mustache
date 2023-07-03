@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Encoding" content=charset=utf-8">
+</head>
+
+<body>
+<div>
+    <form action="/logout" method="post">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
+<div>
+    <form method="post">
+        <input type="text" name="name" placeholder="Введите имя" />
+        <input type="text" name="surname" placeholder="Введите фамилию">
+        <input type="text" name="email" placeholder="Введите электронную почту">
+        <input type="text" name="phoneNumber" placeholder="Введите номер телефона">
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+</body>
+</html>
